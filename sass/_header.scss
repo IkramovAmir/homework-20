@@ -35,7 +35,6 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-
   }
   .header__nav__btns__btn {
     @include btn-style;
@@ -45,13 +44,12 @@ header {
     color: white;
     box-shadow: 5px 5px 2px gray;
   }
-
 }
-ul .fa-x {
+ul .header__nav__btn__close {
   display: none;
-  padding: 10px;
+  padding: 5px 15px;
 }
-.header__nav__btns i{
+.header__nav__btns-bar .fa-bars {
   display: none;
 }
 @media (max-width: 980px) {
@@ -65,24 +63,33 @@ ul .fa-x {
     width: 60%;
     transition: 0.6s;
   }
+  ul .header__nav__btn__close {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  ul .header__nav__btn__close:hover {
+    background-color: red;
+    color: gray;
+    transition: 0.6s;
+    cursor: pointer;
+  }
+  .header__nav__btns-bar {
+    border: none;
+    background-color: inherit;
+  }
+  .header__nav__btns-bar .fa-bars {
+    display: block;
+    font-size: 23px;
+    cursor: pointer;
+  }
+  .header__list-show {
+    left: 0;
+  }
 }
-ul .fa-x {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.fa-x:hover {
-  background-color: red;
-  color: gray;
-  transition: 0.6s;
-  cursor: pointer;
-}
-.header__nav__btns i {
-  display: block;
-  font-size: 23px;
-  cursor: pointer;
-}
-.header__list-show {
-  left: 0;
+@media(max-width:325px){
+  .header__nav{
+    flex-wrap: wrap;
+  }
 }

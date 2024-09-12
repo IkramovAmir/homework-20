@@ -1,9 +1,9 @@
 const bar = document.querySelector(".header__nav__btns-bar");
-const headerBtnClose = document.querySelector(".header__btn-close");
-const headerListClose = document.querySelector(".fa-x");
+const headerBtnClose = document.querySelector(".header__nav__btn-close");
+const headerListClose = document.querySelector(".header__list-close");
 
 bar.addEventListener("click", function () {
-    headerList.classList.add
+    headerList.classList.toggle
     ("header__list-show");
     
 })
