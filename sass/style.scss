@@ -1,10 +1,7 @@
-@import "./header";
-@import "./reset";
-@import "./hero";
-@import "./mixins";
-@import "./help";
-@import "./care";
-@import "./project"
-
-
-
+@import "./base/reset";
+@import "./layout/header";
+@import "./components/cards";
+@import "./pages/home/hero";
+@import "./pages/home/about";
+@import "./pages/home/care";
+@import "./pages/home/project";
